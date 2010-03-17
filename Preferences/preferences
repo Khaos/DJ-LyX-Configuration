@@ -1,0 +1,146 @@
+# This file is written by LyX, if you want to make your own
+# modifications you should do them from inside LyX and save
+
+
+#
+# MISC SECTION ######################################
+#
+
+\path_prefix "E:/Program Files/SumatraPDF"
+\serverpipe "\\.\pipe\lyxserver.in"
+\user_name "Dazhi Jiang"
+\user_email "jiangdzh@gmail.com"
+
+#
+# SCREEN & FONTS SECTION ############################
+#
+
+\screen_font_roman "YaHei Consolas Hybrid"
+\screen_font_typewriter "YaHei Consolas Hybrid"
+
+#
+# COLOR SECTION ###################################
+#
+
+\set_color "cursor" "#DFCFBB"
+\set_color "background" "#282828"
+\set_color "foreground" "#DFCFBB"
+\set_color "selection" "#505050"
+\set_color "latex" "#AE7700"
+\set_color "note" "#DFCFBB"
+\set_color "notebg" "#3C3C3C"
+\set_color "comment" "#949494"
+\set_color "commentbg" "#282828"
+\set_color "urllabel" "#BAD4F4"
+\set_color "urltext" "#BAD4F4"
+\set_color "math" "#7799CC"
+\set_color "mathbg" "#121212"
+\set_color "mathmacrobg" "#282828"
+\set_color "mathmacrohoverbg" "#ff0000"
+\set_color "mathmacrolabel" "#DFCFBB"
+\set_color "mathmacroblend" "#AAAAEE"
+\set_color "mathframe" "#909090"
+\set_color "mathcorners" "#505050"
+\set_color "mathline" "#AE7700"
+\set_color "tabularline" "#937d73"
+\set_color "buttonframe" "#505050"
+\set_color "buttonbg" "#505050"
+\set_color "buttonhoverbg" "#a0a0a0"
+
+#
+# PRINTER SECTION ###################################
+#
+
+
+#
+# EXPORT SECTION ####################################
+#
+
+
+#
+# TEX SECTION #######################################
+#
+
+\font_encoding ""
+
+#
+# FILE SECTION ######################################
+#
+
+\document_path "E:\DJTeX\local\lyx\Doc"
+\load_session true
+\tempdir_path "E:\DJTeX\local\lyx\Temp"
+\backupdir_path "E:\DJTeX\local\lyx\Backup"
+
+#
+# PLAIN TEXT EXPORT SECTION ##############################
+#
+
+
+#
+# SPELLCHECKER SECTION ##############################
+#
+
+
+#
+# LANGUAGE SUPPORT SECTION ##########################
+#
+
+
+#
+# 2nd MISC SUPPORT SECTION ##########################
+#
+
+\default_language british
+
+#
+# FORMATS SECTION ##########################
+#
+
+\format "dia" "dia" "DIA" "" "auto" "auto" "vector"
+\format "emf" "emf" "Enhanced Metafile" "" "%s" "%s" "vector"
+\format "fen" "fen" "FEN" "" "auto" "auto" ""
+\format "fig" "fig" "FIG" "" "auto" "auto" "vector"
+\format "agr" "agr" "Grace" "" "auto" "auto" "vector"
+\format "word" "doc" "MS Word" "W" "%s" "" "document,vector"
+\format "noteedit" "not" "Noteedit" "" "auto" "auto" "vector"
+\format "odt" "odt" "OpenDocument" "" "auto" "auto" "document,vector"
+\format "pdf3" "pdf" "PDF (dvipdfm)" "m" "auto" "" "document,vector"
+\format "pdf2" "pdf" "PDF (pdflatex)" "F" "SumatraPDF -reuse-instance" "" "document,vector"
+\format "pdf" "pdf" "PDF (ps2pdf)" "P" "auto" "" "document,vector"
+\format "pdf4" "pdf" "PDF (xelatex)" "" "SumatraPDF -reuse-instance" "" "document,vector"
+\format "pgm" "pgm" "PGM" "" "auto" "auto" ""
+\format "text" "txt" "Plain text" "a" "" "notepad" "document"
+\format "text4" "txt" "Plain text (catdvi)" "" "" "notepad" "document"
+\format "text3" "txt" "Plain text (ps2ascii)" "" "" "notepad" "document"
+\format "text2" "txt" "Plain text (pstotext)" "" "" "notepad" "document"
+\format "textparagraph" "txt" "Plain Text, Join Lines" "" "" "notepad" "document"
+\format "ppm" "ppm" "PPM" "" "auto" "auto" ""
+\format "rtf" "rtf" "Rich Text Format" "" "%s" "" "document,vector"
+\format "tgif" "obj" "Tgif" "" "auto" "auto" "vector"
+\format "wmf" "wmf" "Windows Metafile" "" "%s" "%s" "vector"
+\format "xbm" "xbm" "XBM" "" "auto" "auto" ""
+\format "xpm" "xpm" "XPM" "" "auto" "auto" ""
+\format "r" "R" "R/S code" "" "notepad++" "notepad++" "document"
+\format "literate" "Rnw" "Sweave" "" "notepad++" "notepad++" "document"
+\format "pdf5" "pdf" "PDF (pdflatex pgfSweave)" "F" "SumatraPDF -reuse-instance" "" "document,vector"
+
+
+#
+# CONVERTERS SECTION ##########################
+#
+
+\converter "wmf" "eps" "matafile2eps $$i $$o" ""
+\converter "pdflatex" "pdf4" "xelatex $$i" "latex"
+\converter "literate" "pdf2" "Rweave $$i" ""
+\converter "literate" "pdf4" "Rweave $$i" ""
+\converter "literate" "r" "R CMD Stangle $$i" ""
+#\converter "literate" "latex" "cp $$r/*.{r,txt,pdf} ./ & R --verbose --no-save --no-restore -q -e library(pgfSweave);pgfSweave('$$i',compile.tex=FALSE)" ""
+#\converter "literate" "pdf2" "cp $$r/*.{r,txt,pdf} ./ & R --verbose --no-save --no-restore -q -e library(pgfSweave);pgfSweave('$$i',compile.tex=FALSE)" ""
+\converter "literate" "pdf5" "pgfRweave $$r $$i" ""
+
+
+#
+# COPIERS SECTION ##########################
+#
+

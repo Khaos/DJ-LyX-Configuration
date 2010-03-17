@@ -1,0 +1,16 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[ctexart, noweb.sty, Sweave.sty]{DJCTeXarticle (Sweave)}
+# Article textclass definition file. Taken from initial LyX source code
+# Author : Dazhi Jiang <jiangdzh@gmail.com>
+# Transposed by Dazhi Jiang© <jiangdzh@gmail.com>
+# 
+# 20100211 Initial version, created based on LyX 1.65's article.layout file
+#
+
+Format 11
+Preamble
+	\usepackage{noweb}
+EndPreamble
+
+Input article.layout
+Input literate-scrap.inc

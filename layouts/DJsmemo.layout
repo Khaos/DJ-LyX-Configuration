@@ -1,0 +1,38 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[DJsmemo]{DJmemorandum (DJsmemo)}
+# DJsmemo textclass definition file.
+# Dazhi Jiang <jiangdzh@gmail.com>, 2008/6/05.
+
+Format 11
+Input DJsmemoclass.inc
+
+SecNumDepth             3
+TocDepth                3
+
+NoStyle Chapter
+NoStyle Chapter*
+NoStyle Addchap
+NoStyle Addchap*
+NoStyle Addpart
+NoStyle Dictum
+
+
+Style Part
+	Align                 Left
+	AlignPossible         Left
+	TopSep                2
+	BottomSep             1.5
+	Font
+	  Size                Larger
+	EndFont
+End
+
+Style Part*
+	Align                 Left
+	AlignPossible         Left
+	TopSep                2
+	BottomSep             1.5
+	Font
+	  Size                Larger
+	EndFont
+End

@@ -1,0 +1,357 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[DJcsmemo]{DJMemorandum (DJcsmemo )}
+# DJsmemo textclass definition file.
+# Dazhi Jiang <jiangdzh@gmail.com>, 2008/6/06.
+
+Format 11
+Input DJcsmemoclass.inc
+
+SecNumDepth             3
+TocDepth                3
+
+# This is just to show how to declare the default font.
+# The defaults are exactly those shown here.
+DefaultFont
+	Family                Roman
+	Series                Medium
+	Shape                 Up
+	Size                  Normal
+	Color                 None
+EndFont
+
+NoStyle Chapter
+NoStyle Chapter*
+NoStyle Addchap
+NoStyle Addchap*
+NoStyle Addpart
+NoStyle Dictum
+# NoStyle Description
+NoStyle Labeling
+NoStyle Addsec*
+# NoStyle List
+NoStyle Minisec
+NoStyle Title
+NoStyle Author
+NoStyle Date
+NoStyle Publishers
+NoStyle Dedication
+NoStyle Titlehead
+NoStyle Uppertitleback
+NoStyle Lowertitleback
+NoStyle Extratitle
+NoStyle Abstract
+NoStyle Captionabove
+NoStyle Captionbelow
+NoStyle Addsec
+NoStyle Subject
+NoStyle Right_Address
+
+
+
+Style Standard
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Block
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+End
+
+
+Style Part
+	Align                 Left
+	AlignPossible         Left
+	TopSep                2
+	BottomSep             1.5
+	Font
+	  Size                Larger
+	EndFont
+End
+
+Style Part*
+	Align                 Left
+	AlignPossible         Left
+	TopSep                2
+	BottomSep             1.5
+	Font
+	  Size                Larger
+	EndFont
+End
+
+Style AddressName
+	Margin                Right_Address_Box
+	LatexType             Command
+	LatexName             AddressName
+	ParSkip               0.4
+	BottomSep             0.5
+	ParSep                1.5
+	Align                 Left
+	AlignPossible         Left
+	LabelType             Static
+	LabelString           "(name): "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Normal
+	  Color               Blue
+	EndFont
+	Font
+	  Size                Normal
+	  Color               Blue
+	EndFont
+End
+
+Style AddressTitle
+	Margin                Right_Address_Box
+	LatexType             Command
+	LatexName             AddressTitle
+	ParSkip               0.4
+	BottomSep             0.5
+	ParSep                1.5
+	Align                 Left
+	AlignPossible         Left
+	LabelType             Static
+	LabelString           "(title): "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Normal
+	  Color               Blue
+	EndFont
+	Font
+	  Size                Normal
+	  Color               Blue
+	EndFont
+End
+
+Style AddressEmail
+	Margin                Right_Address_Box
+	LatexType             Command
+	LatexName             AddressEmail
+	ParSkip               0.4
+	BottomSep             0.5
+	ParSep                1.5
+	Align                 Left
+	AlignPossible         Left
+	LabelType             Static
+	LabelString           "(email): "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Normal
+	  Color               Blue
+	EndFont
+	Font
+	  Size                Normal
+	  Color               Blue
+	EndFont
+End
+
+Style AddressAltTitle
+	Margin                Right_Address_Box
+	LatexType             Command
+	LatexName             AddressAltTitle
+	ParSkip               0.4
+	BottomSep             0.5
+	ParSep                1.5
+	Align                 Left
+	AlignPossible         Left
+	LabelType             Static
+	LabelString           "(alttitle): "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Normal
+	  Color               Blue
+	EndFont
+	Font
+	  Size                Normal
+	  Color               Blue
+	EndFont
+End
+
+Style AddressExt
+	Margin                Right_Address_Box
+	LatexType             Command
+	LatexName             AddressExt
+	ParSkip               0.4
+	BottomSep             1.5
+	ParSep                1.5
+	Align                 Left
+	AlignPossible         Left
+	LabelType             Static
+	LabelString           "(phone): "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Normal
+	  Color               Blue
+	EndFont
+	Font
+	  Size                Normal
+	  Color               Blue
+	EndFont
+End
+
+Style MemoFrom
+	Margin                Dynamic
+	LatexType             Command
+	LatexName             MemoFrom
+	ParIndent             MM
+	Align                 Block
+	AlignPossible         Block
+	LabelType             Static
+	LabelString           "From: "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Normal
+	  Color               Blue
+	EndFont
+	Font
+	  Size                Normal
+	  Color               Blue
+	EndFont
+End
+
+Style MemoTo
+	Margin                Dynamic
+	LatexType             Command
+	LatexName             MemoTo
+	Align                 Block
+	AlignPossible         Block
+	LabelType             Static
+	LabelString           "To:       "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Normal
+	  Color               Blue
+	EndFont
+	Font
+	  Size                Normal
+	  Color               Blue
+	EndFont
+End
+
+
+Style MemoCC
+	Margin                Dynamic
+	LatexType             Command
+	LatexName             MemoCC
+	Align                 Block
+	AlignPossible         Block
+	LabelType             Static
+	LabelString           "CC:       "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Normal
+	  Color               Blue
+	EndFont
+	Font
+	  Size                Normal
+	  Color               Blue
+	EndFont
+End
+
+Style MemoDate
+	Margin                Dynamic
+	LatexType             Command
+	LatexName             MemoDate
+	ParIndent             MM
+	Align                 Block
+	AlignPossible         Block
+	LabelType             Static
+	LabelString           "Date: "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Normal
+	  Color               Blue
+	EndFont
+	Font
+	  Size                Normal
+	  Color               Blue
+	EndFont
+End
+
+
+Style MemoSubject
+	Margin                Dynamic
+	LatexType             Command
+	LatexName             MemoSubject
+	Align                 Block
+	AlignPossible         Block
+	LabelType             Static
+	LabelString           "Subject:       "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Normal
+	  Color               Blue
+	EndFont
+	Font
+	  Size                Normal
+	  Color               Blue
+	EndFont
+End
+
+Style MemoKeywords
+	Margin                Dynamic
+	LatexType             Command
+	LatexName             MemoKeywords
+	Align                 Block
+	AlignPossible         Block
+	LabelType             Static
+	LabelString           "Keywords:       "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Normal
+	  Color               Blue
+	EndFont
+	Font
+	  Size                Normal
+	  Color               Blue
+	EndFont
+	TocLevel				0
+End
+
+Style --makenewmemo--
+	KeepEmpty             1
+	Margin                Dynamic
+	LatexType             Command
+	LatexName             makenewmemo
+	ParIndent             MM
+	Align                 Center
+	AlignPossible         Center
+	LabelType             Static
+	LabelString           "------------ Make a new memorandum ------------"
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                 Larger
+	  Color               Blue
+	EndFont
+End
+
+Style --Separator--
+	KeepEmpty             1
+	Margin                Dynamic
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	Align                 Center
+	AlignPossible         Center
+	LabelType             Static
+	LabelString           "================ Separate Environment ================"
+	LabelFont
+	  Family              Roman
+	  Series              Medium
+	  Size                Larger
+	  Color               Blue
+	EndFont
+End

@@ -1,0 +1,1 @@
+"E:\Program Files\R\R-2.10.1\bin\Rterm" --no-save --args "%1" < "E:/DJTeX/LyX/bin/MakeSweave.R" > "%1.log"
