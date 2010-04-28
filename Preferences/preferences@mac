@@ -1,0 +1,105 @@
+# This file is written by LyX, if you want to make your own
+# modifications you should do them from inside LyX and save
+
+
+#
+# MISC SECTION ######################################
+#
+
+\user_name "Dazhi Jiang"
+\user_email "jiangdzh@gmail.com"
+
+#
+# SCREEN & FONTS SECTION ############################
+#
+
+\single_close_tab_button true
+
+#
+# COLOR SECTION ###################################
+#
+
+\set_color "cursor" "#DFCFBB"
+\set_color "background" "#282828"
+\set_color "foreground" "#DFCFBB"
+\set_color "selection" "#505050"
+\set_color "latex" "#AE7700"
+\set_color "note" "#DFCFBB"
+\set_color "notebg" "#3C3C3C"
+\set_color "comment" "#949494"
+\set_color "commentbg" "#282828"
+\set_color "urllabel" "#BAD4F4"
+\set_color "urltext" "#BAD4F4"
+\set_color "math" "#7799CC"
+\set_color "mathbg" "#121212"
+\set_color "mathmacrobg" "#282828"
+\set_color "mathmacrohoverbg" "#ff0000"
+\set_color "mathmacrolabel" "#DFCFBB"
+\set_color "mathmacroblend" "#AAAAEE"
+\set_color "mathframe" "#909090"
+\set_color "mathcorners" "#505050"
+\set_color "mathline" "#AE7700"
+\set_color "tabularline" "#937d73"
+\set_color "buttonframe" "#505050"
+\set_color "buttonbg" "#505050"
+\set_color "buttonhoverbg" "#a0a0a0"
+
+#
+# PRINTER SECTION ###################################
+#
+
+
+#
+# EXPORT SECTION ####################################
+#
+
+
+#
+# TEX SECTION #######################################
+#
+
+\font_encoding ""
+
+#
+# FILE SECTION ######################################
+#
+
+\load_session true
+
+#
+# PLAIN TEXT EXPORT SECTION ##############################
+#
+
+
+#
+# SPELLCHECKER SECTION ##############################
+#
+
+\use_spell_lib false
+
+#
+# LANGUAGE SUPPORT SECTION ##########################
+#
+
+
+#
+# 2nd MISC SUPPORT SECTION ##########################
+#
+
+\default_language british
+
+#
+# FORMATS SECTION ##########################
+#
+
+\format "pdf2" "pdf" "PDF (pdflatex)" "F" "open -a Skim.app $$i" "" "document,vector"
+
+#
+# CONVERTERS SECTION ##########################
+#
+
+
+#
+# COPIERS SECTION ##########################
+#
+
