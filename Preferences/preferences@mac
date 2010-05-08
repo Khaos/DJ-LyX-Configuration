@@ -6,8 +6,10 @@
 # MISC SECTION ######################################
 #
 
+\serverpipe "/Users/Khaos/iApps/LyX/LyX.app/Contents/Resources/lyxpipe"
 \user_name "Dazhi Jiang"
 \user_email "jiangdzh@gmail.com"
+\preview no_math
 
 #
 # SCREEN & FONTS SECTION ############################
