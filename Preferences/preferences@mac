@@ -15,6 +15,7 @@
 # SCREEN & FONTS SECTION ############################
 #
 
+\open_buffers_in_tabs true
 \single_close_tab_button true
 
 #
@@ -94,9 +95,8 @@
 # FORMATS SECTION ##########################
 #
 
-\format "pdf2" "pdf" "PDF (pdflatex)" "F" "open -a Skim.app $$i" "" "document,vector"
 \format "pdf5" "pdf" "PDF (pdflatex pgfSweave)" "F" "open -a Skim.app $$i" "" "document,vector"
-
+\format "pdf2" "pdf" "PDF (pdflatex)" "F" "open -a Skim.app $$i" "" "document,vector"
 
 #
 # CONVERTERS SECTION ##########################
@@ -104,7 +104,6 @@
 
 \converter "literate" "pdf2" "Rweave $$i" ""
 \converter "literate" "pdf5" "pgfRweave $$r $$i" ""
-
 
 #
 # COPIERS SECTION ##########################
