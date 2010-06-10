@@ -68,6 +68,7 @@
 #
 
 \load_session true
+\tempdir_path "/Users/Khaos/iDocs/iTmp/iLyXTmp"
 
 #
 # PLAIN TEXT EXPORT SECTION ##############################
