@@ -1,0 +1,5 @@
+#% Do not delete the line below; configure depends on this      
+#  \DeclareLaTeXClass[ctexrep, Sweave.sty]{report (Sweave CTeX)}
+
+# Read the definitions from literate-report.layout
+Input literate-report.layout
