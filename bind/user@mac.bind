@@ -2,8 +2,8 @@
 ## All modifications will be lost
 
 
-\bind "C-S-0" "buffer-view pdf2"
 \bind "C-M-S-0" "buffer-view pdf5"
-\bind "C-S-1" "buffer-update pdf2"
 \bind "C-M-S-1" "buffer-update pdf5"
+\bind "M-9" "buffer-update pdf2"
+\bind "M-0" "buffer-view pdf2"
 
