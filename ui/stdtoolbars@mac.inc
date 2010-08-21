@@ -220,11 +220,14 @@ ToolbarSet
 		Item "View PDF (pdflatex)" "buffer-view pdf2"
 		Item "Update PDF (pdflatex)" "buffer-update pdf2"
 		Separator
-		Item "xelatex0" "buffer-view pdf4"
-		Item "xelatex1" "buffer-update pdf4"
+		Item "xelatex" "buffer-view pdf4"
+		Item "rexelatex" "buffer-update pdf4"
 		Separator
-		Item "pgfSweave0" "buffer-view pdf5"
-		Item "pgfSweave1" "buffer-update pdf5"
+		Item "pgfSweave" "buffer-view pdf5"
+		Item "repgfSweave" "buffer-update pdf5"
+		Separator
+		Item "pdfasy" "buffer-view pdf7"
+		Item "repdfasy" "buffer-update pdf7"
 #		Item "View PostScript" "buffer-view ps"
 #		Item "Update PostScript" "buffer-update ps"
 	End

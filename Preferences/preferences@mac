@@ -96,18 +96,22 @@
 # FORMATS SECTION ##########################
 #
 
-\format "pdf5" "pdf" "PDF (pdflatex pgfSweave)" "F" "open -a Skim.app $$i" "" "document,vector"
 \format "pdf2" "pdf" "PDF (pdflatex)" "F" "open -a Skim.app $$i" "" "document,vector"
 \format "pdf4" "pdf" "PDF (xelatex)" "F" "open -a Skim.app $$i" "" "document,vector"
+\format "pdf5" "pdf" "PDF (pdflatex pgfSweave)" "F" "open -a Skim.app $$i" "" "document,vector"
+\format "pdf7" "pdf" "PDF (pdflatex asymptote)" "F" "open -a Skim.app $$i" "" "document,vector"
 
 #
 # CONVERTERS SECTION ##########################
 #
 
 \converter "literate" "pdf2" "Rweave $$i" ""
-\converter "literate" "pdf5" "pgfRweave $$r $$i" ""
-\converter "pdflatex" "pdf4" "xelatex $$i" "latex"
 \converter "literate" "pdf4" "Rweave $$i" ""
+\converter "literate" "pdf5" "pgfRweave $$r $$i" ""
+
+\converter "pdflatex" "pdf4" "xelatex $$i" "latex"
+\converter "pdflatex" "pdf5" "pgfRweave $$r $$i" ""
+\converter "pdflatex" "pdf7" "pdfasypdf $$r $$b" ""
 
 #
 # COPIERS SECTION ##########################

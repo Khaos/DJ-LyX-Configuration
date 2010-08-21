@@ -1,0 +1,609 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{asymptote}
+\end_preamble
+\use_default_options true
+\language british
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Notes on Asymptote
+\end_layout
+
+\begin_layout Author
+Khaos
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+A test file 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ldots
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Section
+Test
+\end_layout
+
+\begin_layout Subsection
+A First Try
+\end_layout
+
+\begin_layout Standard
+The first example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Optional subdirectory for asy files: 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+asydir{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{asydef} 
+\end_layout
+
+\begin_layout Plain Layout
+
+// Global Asymptote definitions can be put here.
+\end_layout
+
+\begin_layout Plain Layout
+
+import three;
+\end_layout
+
+\begin_layout Plain Layout
+
+usepackage("bm");
+\end_layout
+
+\begin_layout Plain Layout
+
+texpreamble("
+\backslash
+def
+\backslash
+V#1{
+\backslash
+bm{#1}}");
+\end_layout
+
+\begin_layout Plain Layout
+
+// One can globally override the default toolbar settings here:
+\end_layout
+
+\begin_layout Plain Layout
+
+// settings.toolbar=true;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{asydef}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here is a venn diagram produced with Asymptote, drawn to width 4cm:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+A{A}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+B{
+\backslash
+V{B}} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{asy}
+\end_layout
+
+\begin_layout Plain Layout
+
+size(4cm,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+pen colour1=red;
+\end_layout
+
+\begin_layout Plain Layout
+
+pen colour2=green;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+pair z0=(0,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+pair z1=(-1,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+pair z2=(1,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+real r=1.5;
+\end_layout
+
+\begin_layout Plain Layout
+
+path c1=circle(z1,r);
+\end_layout
+
+\begin_layout Plain Layout
+
+path c2=circle(z2,r);
+\end_layout
+
+\begin_layout Plain Layout
+
+fill(c1,colour1);
+\end_layout
+
+\begin_layout Plain Layout
+
+fill(c2,colour2);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+picture intersection=new picture;
+\end_layout
+
+\begin_layout Plain Layout
+
+fill(intersection,c1,colour1+colour2);
+\end_layout
+
+\begin_layout Plain Layout
+
+clip(intersection,c2);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+add(intersection);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+draw(c1);
+\end_layout
+
+\begin_layout Plain Layout
+
+draw(c2);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+//draw("$
+\backslash
+A$",box,z1);              // Requires [inline] package option.
+\end_layout
+
+\begin_layout Plain Layout
+
+//draw(Label("$
+\backslash
+B$","$B$"),box,z2); // Requires [inline] package option.
+\end_layout
+
+\begin_layout Plain Layout
+
+draw("$A$",box,z1);
+\end_layout
+
+\begin_layout Plain Layout
+
+draw("$
+\backslash
+V{B}$",box,z2);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+pair z=(0,-2);
+\end_layout
+
+\begin_layout Plain Layout
+
+real m=3;
+\end_layout
+
+\begin_layout Plain Layout
+
+margin BigMargin=Margin(0,m*dot(unit(z1-z),unit(z0-z)));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+draw(Label("$A
+\backslash
+cap B$",0),conj(z)--z0,Arrow,BigMargin);
+\end_layout
+
+\begin_layout Plain Layout
+
+draw(Label("$A
+\backslash
+cup B$",0),z--z0,Arrow,BigMargin);
+\end_layout
+
+\begin_layout Plain Layout
+
+draw(z--z1,Arrow,Margin(0,m));
+\end_layout
+
+\begin_layout Plain Layout
+
+draw(z--z2,Arrow,Margin(0,m));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+shipout(bbox(0.25cm));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{asy}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+caption{Venn diagram}
+\backslash
+label{venn}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One can also scale the figure to the full line width:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{asy}[width=
+\backslash
+the
+\backslash
+linewidth,inline=true]
+\end_layout
+
+\begin_layout Plain Layout
+
+pair z0=(0,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+pair z1=(2,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+pair z2=(5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+pair zf=z1+0.75*(z2-z1);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+draw(z1--z2);
+\end_layout
+
+\begin_layout Plain Layout
+
+dot(z1,red+0.15cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+dot(z2,darkgreen+0.3cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+label("$m$",z1,1.2N,red);
+\end_layout
+
+\begin_layout Plain Layout
+
+label("$M$",z2,1.5N,darkgreen);
+\end_layout
+
+\begin_layout Plain Layout
+
+label("$
+\backslash
+hat{
+\backslash
+ }$",zf,0.2*S,fontsize(24pt)+blue);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+pair s=-0.2*I;
+\end_layout
+
+\begin_layout Plain Layout
+
+draw("$x$",z0+s--z1+s,N,red,Arrows,Bars,PenMargins);
+\end_layout
+
+\begin_layout Plain Layout
+
+s=-0.5*I; draw("$
+\backslash
+bar{x}$",z0+s--zf+s,blue,Arrows,Bars,PenMargins);
+\end_layout
+
+\begin_layout Plain Layout
+
+s=-0.95*I;
+\end_layout
+
+\begin_layout Plain Layout
+
+draw("$X$",z0+s--z2+s,darkgreen,Arrows,Bars,PenMargins);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{asy}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Section*
+Dump
+\end_layout
+
+\end_body
+\end_document
