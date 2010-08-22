@@ -1,6 +1,7 @@
 # What: Style definition for R/S code chunks (scraps)
 # Author: Gregor Gorjanc <gregor.gorjanc@bfro.uni-lj.si>
 #    modified by Yihui Xie to incorporate with pgfSweave
+#    polished by Dazhi Jiang
 # $Id: literate-scrap.inc 130 2007-07-29 15:06:03Z ggorjan $
 #
 # This file is a copy of literate-scrap.inc from LyX, but changed for
@@ -27,41 +28,52 @@ Preamble
 \usepackage{tikz}
 EndPreamble
 
-OutputType              literate
+OutputType					literate
 
 Style RScrap
-  LatexType             Environment
-  LatexName             wrapsweave
-  Margin                static
-  TopSep                0.4
-  BottomSep             0.4
-  ParSep                0.0
-  LabelType             static
-  Align                 left
-  AlignPossible         block, left, right, center
-  NewLine               0
-  PassThru              1
-  FreeSpacing           1
-  TextFont
-    Color               latex
-    Family              typewriter
-  EndFont
+	LatexType				Environment
+	LatexName				wrapsweave
+	Margin					Dynamic
+	TopSep					0.4
+	BottomSep				0.4
+	ParSep					0.0
+	LabelType				static
+	# Add quota to the sting that includes spaces 
+	LabelString				"R >>"
+	Labelsep				M
+	EndLabeltype			Filled_Box
+	EndLabelString			"END"
+	LabelFont
+	    Color				foreground
+	    Size				large
+		# Shape				Italic
+		Series				Bold
+	EndFont
+	Align					left
+	AlignPossible			block, left, right, center
+	NewLine					0
+	PassThru				1
+	FreeSpacing				1
+	TextFont
+		Color				latex
+		Family				typewriter
+	EndFont
 End
 
 Style RScrapCenter
-  LatexType             Environment
-  LatexName             center
-  Margin                static
-  TopSep                0.4
-  BottomSep             0.4
-  ParSep                0.0
-  LabelType             static
-  Align                 center
-  NewLine               0
-  PassThru              1
-  FreeSpacing           1
-  TextFont
-    Color               latex
-    Family              typewriter
-  EndFont
+	LatexType				Environment
+	LatexName				center
+	Margin					static
+	TopSep					0.4
+	BottomSep				0.4
+	ParSep					0.0
+	LabelType				static
+	Align					center
+	NewLine					0
+	PassThru				1
+	FreeSpacing				1
+	TextFont
+		Color				latex
+		Family				typewriter
+	EndFont
 End

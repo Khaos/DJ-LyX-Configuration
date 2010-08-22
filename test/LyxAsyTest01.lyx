@@ -2,7 +2,7 @@
 \lyxformat 345
 \begin_document
 \begin_header
-\textclass article
+\textclass DJAsyART
 \begin_preamble
 \usepackage{asymptote}
 \end_preamble
@@ -103,7 +103,7 @@ A First Try
 \end_layout
 
 \begin_layout Standard
-The first example:
+Global options
 \end_layout
 
 \begin_layout Standard
@@ -124,30 +124,24 @@ def
 asydir{}
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
 
-\backslash
-begin{asydef} 
 \end_layout
 
-\begin_layout Plain Layout
-
+\begin_layout AsyDefScrap
 // Global Asymptote definitions can be put here.
 \end_layout
 
-\begin_layout Plain Layout
-
+\begin_layout AsyDefScrap
 import three;
 \end_layout
 
-\begin_layout Plain Layout
-
+\begin_layout AsyDefScrap
 usepackage("bm");
 \end_layout
 
-\begin_layout Plain Layout
-
+\begin_layout AsyDefScrap
 texpreamble("
 \backslash
 def
@@ -157,26 +151,16 @@ V#1{
 bm{#1}}");
 \end_layout
 
-\begin_layout Plain Layout
-
+\begin_layout AsyDefScrap
 // One can globally override the default toolbar settings here:
 \end_layout
 
-\begin_layout Plain Layout
-
+\begin_layout AsyDefScrap
 // settings.toolbar=true;
 \end_layout
 
-\begin_layout Plain Layout
-
-
-\backslash
-end{asydef}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Standard
+The first example:
 \end_layout
 
 \begin_layout Standard
@@ -469,7 +453,7 @@ One can also scale the figure to the full line width:
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -584,6 +568,147 @@ draw("$X$",z0+s--z2+s,darkgreen,Arrows,Bars,PenMargins);
 \backslash
 end{asy}
 \end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A asy code snippet test
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout AsyScrap
+\begin_inset OptArg
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+width=
+\backslash
+the
+\backslash
+linewidth,inline=true
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+pair z0=(0,0);
+\begin_inset Newline newline
+\end_inset
+
+pair z1=(2,0);
+\begin_inset Newline newline
+\end_inset
+
+pair z2=(5,0);
+\begin_inset Newline newline
+\end_inset
+
+pair zf=z1+0.75*(z2-z1);
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+draw(z1--z2);
+\begin_inset Newline newline
+\end_inset
+
+dot(z1,red+0.15cm);
+\begin_inset Newline newline
+\end_inset
+
+dot(z2,darkgreen+0.3cm);
+\begin_inset Newline newline
+\end_inset
+
+label("$m$",z1,1.2N,red);
+\begin_inset Newline newline
+\end_inset
+
+label("$M$",z2,1.5N,darkgreen);
+\begin_inset Newline newline
+\end_inset
+
+label("$
+\backslash
+hat{
+\backslash
+ }$",zf,0.2*S,fontsize(24pt)+blue);
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+pair s=-0.2*I;
+\begin_inset Newline newline
+\end_inset
+
+draw("$x$",z0+s--z1+s,N,red,Arrows,Bars,PenMargins);
+\begin_inset Newline newline
+\end_inset
+
+s=-0.5*I;
+\begin_inset Newline newline
+\end_inset
+
+draw("$
+\backslash
+bar{x}$",z0+s--zf+s,blue,Arrows,Bars,PenMargins);
+\begin_inset Newline newline
+\end_inset
+
+s=-0.95*I;
+\begin_inset Newline newline
+\end_inset
+
+draw("$X$",z0+s--z2+s,darkgreen,Arrows,Bars,PenMargins);
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
