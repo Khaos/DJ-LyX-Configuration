@@ -48,21 +48,21 @@ A R code snippet test
 
 \begin_layout RScrap
 <<myFirstChunkInLyX>>=
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout RScrap
 xObs <- 100; xMean <- 10; xVar <- 9
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout RScrap
 x <- rnorm(n=xObs, mean=xMean, sd=sqrt(xVar))
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout RScrap
 mean(x)
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout RScrap
 @
 \end_layout
 
