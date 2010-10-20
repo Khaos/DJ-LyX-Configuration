@@ -112,7 +112,7 @@ status open
 
 \begin_layout Plain Layout
 
-% Optional subdirectory for asy files: 
+% Optional subdirectory for asy files:
 \end_layout
 
 \begin_layout Plain Layout
@@ -131,13 +131,13 @@ asydir{}
 
 \begin_layout AsyDefScrap
 // Global Asymptote definitions can be put here.
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout AsyDefScrap
 import three;
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout AsyDefScrap
 usepackage("bm");
 \end_layout
 
@@ -149,13 +149,13 @@ def
 V#1{
 \backslash
 bm{#1}}");
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout AsyDefScrap
 // One can globally override the default toolbar settings here:
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout AsyDefScrap
 // settings.toolbar=true;
 \end_layout
 
@@ -188,17 +188,8 @@ def
 \backslash
 B{
 \backslash
-V{B}} 
+V{B}}
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
@@ -220,203 +211,181 @@ begin{center}
 
 \begin_layout Plain Layout
 
-
-\backslash
-begin{asy}
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
+
+\end_layout
+
+\begin_layout AsyScrap
 size(4cm,0);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 pen colour1=red;
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 pen colour2=green;
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 pair z0=(0,0);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 pair z1=(-1,0);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 pair z2=(1,0);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 real r=1.5;
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 path c1=circle(z1,r);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 path c2=circle(z2,r);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 fill(c1,colour1);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 fill(c2,colour2);
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 picture intersection=new picture;
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
+
+\begin_inset Newline newline
+\end_inset
 
 fill(intersection,c1,colour1+colour2);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 clip(intersection,c2);
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 add(intersection);
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 draw(c1);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 draw(c2);
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 //draw("$
 \backslash
 A$",box,z1);              // Requires [inline] package option.
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 //draw(Label("$
 \backslash
 B$","$B$"),box,z2); // Requires [inline] package option.
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 draw("$A$",box,z1);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 draw("$
 \backslash
 V{B}$",box,z2);
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 pair z=(0,-2);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 real m=3;
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 margin BigMargin=Margin(0,m*dot(unit(z1-z),unit(z0-z)));
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 draw(Label("$A
 \backslash
 cap B$",0),conj(z)--z0,Arrow,BigMargin);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 draw(Label("$A
 \backslash
 cup B$",0),z--z0,Arrow,BigMargin);
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 draw(z--z1,Arrow,Margin(0,m));
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 draw(z--z2,Arrow,Margin(0,m));
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
+\begin_inset Newline newline
+\end_inset
 
 shipout(bbox(0.25cm));
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
 \begin_layout Plain Layout
 
-
-\backslash
-end{asy}
 \end_layout
 
 \begin_layout Plain Layout
@@ -442,18 +411,106 @@ end{center}
 end{figure}
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-One can also scale the figure to the full line width:
+Each graph is drawn in its own environment.
+ One can specify the width and height to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX{}
+\end_layout
+
+\end_inset
+
+ explicitly.
+ This 3D example can be viewed interactively either with Adobe Reader or
+ Asymptote's fast OpenGL-based renderer.
+ To support 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+tt latexmk}
+\end_layout
+
+\end_inset
+
+, 3D figures should specify 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+inline=true+
+\end_layout
+
+\end_inset
+
+.
+ It is sometimes desirable to embed 3D files as annotated attachments; this
+ requires the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+attach=true+
+\end_layout
+
+\end_inset
+
+ option as well as the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+attachfile2+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX{}
+\end_layout
+
+\end_inset
+
+ package.
 \end_layout
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -462,112 +519,38 @@ status collapsed
 begin{center}
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-
-\backslash
-begin{asy}[width=
-\backslash
-the
-\backslash
-linewidth,inline=true]
-\end_layout
-
-\begin_layout Plain Layout
-
-pair z0=(0,0);
-\end_layout
-
-\begin_layout Plain Layout
-
-pair z1=(2,0);
-\end_layout
-
-\begin_layout Plain Layout
-
-pair z2=(5,0);
-\end_layout
-
-\begin_layout Plain Layout
-
-pair zf=z1+0.75*(z2-z1);
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Plain Layout
-
-draw(z1--z2);
-\end_layout
-
-\begin_layout Plain Layout
-
-dot(z1,red+0.15cm);
-\end_layout
+\begin_layout AsyScrap
+\begin_inset OptArg
+status open
 
 \begin_layout Plain Layout
-
-dot(z2,darkgreen+0.3cm);
-\end_layout
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
-label("$m$",z1,1.2N,red);
+height=4cm,inline=true,attach=false
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-label("$M$",z2,1.5N,darkgreen);
-\end_layout
-
-\begin_layout Plain Layout
-
-label("$
-\backslash
-hat{
-\backslash
- }$",zf,0.2*S,fontsize(24pt)+blue);
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-pair s=-0.2*I;
+ currentprojection=orthographic(5,4,2); draw(unitcube,blue); label("$V-E+F=2$",(
+0,1,0.5),3Y,blue+fontsize(17pt));
 \end_layout
 
-\begin_layout Plain Layout
-
-draw("$x$",z0+s--z1+s,N,red,Arrows,Bars,PenMargins);
-\end_layout
-
-\begin_layout Plain Layout
-
-s=-0.5*I; draw("$
-\backslash
-bar{x}$",z0+s--zf+s,blue,Arrows,Bars,PenMargins);
-\end_layout
-
-\begin_layout Plain Layout
-
-s=-0.95*I;
-\end_layout
-
-\begin_layout Plain Layout
-
-draw("$X$",z0+s--z2+s,darkgreen,Arrows,Bars,PenMargins);
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{asy}
-\end_layout
+\begin_layout Standard
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
@@ -582,7 +565,11 @@ end{center}
 \end_layout
 
 \begin_layout Standard
-A asy code snippet test
+One can also scale the figure to the full line width:
+\end_layout
+
+\begin_layout Standard
+An asy code snippet test
 \end_layout
 
 \begin_layout Standard

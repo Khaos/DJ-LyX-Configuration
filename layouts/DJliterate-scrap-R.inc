@@ -42,7 +42,7 @@ Style RScrap
 	LabelString				"R >>"
 	Labelsep				M
 	EndLabeltype			Filled_Box
-	EndLabelString			"END"
+	EndLabelString			"EOF"
 	LabelFont
 	    Color				foreground
 	    Size				large

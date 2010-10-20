@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>tmp/layouts/stdclass.inc</string>
+	<string>tmp/literate-beamer.layout</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -41,6 +41,8 @@
 			<string>Preamble</string>
 		</dict>
 		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>Preferences</string>
 			<key>regexFolderFilter</key>
@@ -98,7 +100,7 @@
 			<key>filename</key>
 			<string>.gitignore</string>
 			<key>lastUsed</key>
-			<date>2010-08-22T01:45:19Z</date>
+			<date>2010-09-11T14:30:45Z</date>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -110,9 +112,23 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>200</integer>
+	<integer>202</integer>
 	<key>metaData</key>
 	<dict>
+		<key>.gitignore</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>7</integer>
+				<key>line</key>
+				<integer>3</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>Preferences/preferences</key>
 		<dict>
 			<key>caret</key>
@@ -143,148 +159,59 @@
 				<integer>135</integer>
 			</dict>
 		</dict>
-		<key>bin/pdfayspdf.sh</key>
+		<key>layouts/DJpgfSweaveBeamer.layout</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>31</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>5</integer>
+				<integer>15</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>layouts/DJAsyART.layout</key>
+		<key>tmp/layouts/beamer.layout</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
+				<integer>7</integer>
+				<key>line</key>
+				<integer>259</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>264</integer>
+		</dict>
+		<key>tmp/literate-beamer.layout</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>14</integer>
+				<key>line</key>
 				<integer>53</integer>
-				<key>line</key>
-				<integer>6</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>layouts/DJliterate-scrap-asy.inc</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>24</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>16</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>24</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>5</integer>
-				<key>line</key>
-				<integer>24</integer>
-			</dict>
-		</dict>
-		<key>layouts/DJliterate-scrap.inc</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>tmp/layouts/article.layout</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>tmp/layouts/stdclass.inc</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>11</integer>
-				<key>line</key>
-				<integer>47</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>18</integer>
-		</dict>
-		<key>tmp/layouts/stdinsets.inc</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>8</integer>
-				<key>line</key>
-				<integer>250</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>96</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>247</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>8</integer>
-				<key>line</key>
-				<integer>250</integer>
-			</dict>
+			<integer>35</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>layouts/DJliterate-scrap-asy.inc</string>
-		<string>tmp/layouts/stdinsets.inc</string>
-		<string>layouts/DJAsyART.layout</string>
-		<string>tmp/layouts/article.layout</string>
-		<string>tmp/layouts/stdclass.inc</string>
+		<string>.gitignore</string>
+		<string>layouts/DJpgfSweaveBeamer.layout</string>
+		<string>tmp/literate-beamer.layout</string>
+		<string>tmp/layouts/beamer.layout</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{3, 52}, {692, 726}}</string>
+	<string>{{1, 4}, {711, 774}}</string>
 </dict>
 </plist>

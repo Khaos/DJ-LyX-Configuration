@@ -36,7 +36,7 @@ Style AsyScrap
 	LabelString				"asy >>"
 	Labelsep				I
 	EndLabeltype			Filled_Box
-	EndLabelString			"END"
+	EndLabelString			"EOF"
 	LabelFont
 	    Color				foreground
 	    Size				large
@@ -68,7 +68,7 @@ Style AsyDefScrap
 	LabelString				"asydef >>"
 	Labelsep				I
 	EndLabeltype			Filled_Box
-	EndLabelString			"END"
+	EndLabelString			"EOF"
 	LabelFont
 	    Color				foreground
 	    Size				large
