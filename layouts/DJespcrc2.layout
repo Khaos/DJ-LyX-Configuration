@@ -59,7 +59,7 @@ Style Title
 	LabelType             No_Label
 	Font
 	  Size                Largest
-	  Color               Blue
+	  Color               Yellow
 	EndFont
 End
 
@@ -79,7 +79,7 @@ Style Author
 	LabelType             No_Label
 	Font
 	  Size                Large
-	  Color               Blue
+	  Color               Yellow
 	EndFont
 End
 
@@ -101,11 +101,11 @@ Style DJAuthor
 	  Family              Roman
 	  Series              Bold
 	  Size                Large
-	  Color               Blue
+	  Color               Yellow
 	EndFont
 	Font
 	  Size                Large
-	  Color               Blue
+	  Color               Yellow
 	EndFont
 End
 
@@ -124,12 +124,12 @@ Style RunTitle
 	LabelFont
 	  Family              Roman
 	  Series              Bold
-	  Size                 Normal
-	  Color               Blue
+	  Size                Normal
+	  Color               Yellow
 	EndFont
 	Font
 	  Size                Normal
-	  Color               Blue
+	  Color               Yellow
 	EndFont
 End
 
@@ -148,12 +148,12 @@ Style RunAuthor
 	LabelFont
 	  Family              Roman
 	  Series              Bold
-	  Size                 Normal
-	  Color               Blue
+	  Size                Normal
+	  Color               Yellow
 	EndFont
 	Font
 	  Size                Normal
-	  Color               Blue
+	  Color               Yellow
 	EndFont
 End
 
@@ -181,6 +181,21 @@ Style Abstract
 	LabelFont
 	  Series              Bold
 	  Size                Large
-	  Color               Blue
+	  Color               Yellow
 	EndFont
+End
+
+# With paralist, the three standard list environments take an optional
+# argument. See paralist.pdf_ for possible values.
+
+Style Itemize
+	OptionalArgs          1
+End
+
+Style Enumerate
+	OptionalArgs          1
+End
+
+Style Description
+	OptionalArgs          1
 End
